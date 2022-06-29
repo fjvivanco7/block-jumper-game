@@ -1,16 +1,9 @@
-import glob
-import io
 import os
-import uuid
-
-import numpy as np
-from flask import Flask, jsonify, make_response, render_template, request
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-from matplotlib.figure import Figure
+from flask import Flask, render_template
 
 app = Flask(__name__)
 app.secret_key = "1726463548"
-app._static_folder = os.path.abspath("templates/")
+app._static_folder = os.path.abspath("templates/static/")
 
 
 @app.route("/", methods=["GET"])

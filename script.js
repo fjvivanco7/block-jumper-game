@@ -25,7 +25,7 @@ $( document ).ready(function() {
        var y = e.pageY - this.offsetTop;
        var radius = 10;
        var fillColor = 'rgb(102,13,25)';
-       ctx.fillCircle(x, y, radius, fillColor);
+       ctx.fillCircle(x, y, radius);
      };
      canvas.onmousedown = function(e) {
        canvas.isDrawing = true;
